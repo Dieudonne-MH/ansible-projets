@@ -1,0 +1,11 @@
+TP-5 : Déployez un conteneur apache 
+
+• Créez un cluster (1 ansible et 1 client) 
+• Créez un dossier webapp qui va contenir tous les fichiers de notre projet 
+• Créez un fichier d’inventaire appelé prod.yml (au format yaml) contenant un groupe prod avec comme seul membre notre client 
+• Créez un dossier group_vars qui va contenir un fichier nommé prod qui contiendra les informations de connexion à utiliser par ansible (login et mot de passe) 
+• Créez un playbook nommé deploy.yml permettant de déployez apache à l’aide de docker sur le client (l’image à utiliser est httpd et le port à exposer à l’extérieur est le 80) • Vous avez le droit d’installer tout prérequis que vous jugerez nécessaire à l’aide du module yum 
+• Vérifiez la syntaxe de votre playbook avec la commande ansible-lint (installez là si elle n’est pas disponible) 
+• Vérifiez qu’après l’exécution de votre playbook le site par défaut d’apache est bien disponible sur le port 80 
+• Explorez les options de debug de ansible 
+• Afin de conserver votre travail, poussez-le sur votre GitHub
