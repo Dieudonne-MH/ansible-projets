@@ -1,0 +1,10 @@
+TP-6 : Déployez votre propre site 
+
+• Créez un cluster (1 ansible et 1 client) et récupérez le code webapp stocké sur GitHub 
+• Créez un dossier Template avec comme contenu un fichier index.html.j2 qui devra permettre d’afficher sur le site “bienvenue sur -nom de l’hôte-” 
+• Modifiez le playbook deploy.yml afin d’utiliser les loop pour installer git et wget à l’aide du module yum 
+• D’utiliser une condition afin de n’installer wget et git uniquement si nous sommes sur un système CentOS 
+• Modifiez le site internet par défaut, en copiant un Template index.html.j2 qui devra afficher “bienvenue sur -nom de l’hôte-” –nom de l’hôte- étant récupéré dans les variables fournies par ansible 
+• Modifiez le déploiement du conteneur apache pour qu’il monte le fichier index.html dans le répertoire dans lequel il lit le site internet par défaut (consulter la Doc d’apache sur le Dockerhub), vous utiliserez la notion de montage de volume 
+• Vérifiez que votre site est bien conforme aux attentes 
+• Poussez votre travail que votre GitHub privé car l’environnement dans lequel vous travaillez est éphémère
