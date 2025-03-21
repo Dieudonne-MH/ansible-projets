@@ -8,5 +8,7 @@ ansible-galaxy install geerlingguy.docker
 ansible-playbook -i hosts.ini install_docker.yml
 apt install python3-pip -y
 sudo pip3 install ansible-lint
-ansible-playbook -i hosts.ini deploy_v1.yml
 
+ansible-playbook -i hosts.yml -vvv deploy_v1.yml
+
+ansible-playbook -i hosts.yml -vvv deploy_v2.yml
