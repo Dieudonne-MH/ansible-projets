@@ -1,4 +1,7 @@
 
+/home/vagrant/ansible-training/TPs-vagrant/TP9 - TOWER ou AWX/cursus-devops/tower# cd ~/.awx/awxcompose/
+
+
 git clone https://github.com/diranetafen/cursus-devops.git
 
 cd cursus-devops/tower/
