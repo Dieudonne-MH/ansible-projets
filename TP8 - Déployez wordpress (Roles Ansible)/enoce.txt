@@ -1,0 +1,5 @@
+TP-8 : Déployez WordPress 
+
+• Créez un cluster (1 ansible et 1 client) et récupérez votre code provenant du TP-7 depuis GitHub 
+• Créez un playbook wordpress.yml afin de déployez WordPress (sous forme de conteneur docker) sur le client à l’aide du rôle suivant : https://github.com/diranetafen/ansible-role-containerized-wordpress.git 
+• Lancez le playbook et vérifiez que marche comme sur des roulettes et que vous avez bien WordPress (vous pouvez exposer WordPress sur le port externe de votre choix, 80 ou 8080 ou autre, tant qu’il n’est pas déjà utilisé sur votre machine client par un autre conteneur)

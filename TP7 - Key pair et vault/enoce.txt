@@ -1,0 +1,12 @@
+TP-7 : Key pair et Vault 
+
+• Créez un cluster (1 ansible et 1 client) et récupérez votre code du TP-6 depuis votre GitHub 
+• Créez un répertoire files qui va lui-même contenir un dossier secrets qui lui-même va contenir un fichier credentials.vault 
+• Déplacez la variable contenant la variable du mot de passe admin dans ce fichier
+• Ensuite vous allez encryptez ce fichier à l’aide de la commande ansible-vault encrypt 
+• Vous allez modifiez le playbook deploy.yml afin de lui demander de charger le fichier vaulté en tant que vars_files 
+• Générez une paire de clé (ssh-keygen -t rsa) en laissant tous les paramètres par défaut • Copiez le contenu de la clé publique (id_rsa.pub) dans le fichier /home/admin/.ssh/authorized_host du client 
+• Modifiez le fichier d’inventaire afin de rajouter cette variable à tous les hôtes (all) ansible_ssh_common_args='-o StrictHostKeyChecking=no 
+• Lancez votre playbook en rajoutant le paramètre qui vous permettra de fournir la clé vault 
+• Vérifiez que tout s’est bien passé 
+• Afin de conserver votre travail, poussez-le sur votre GitHub

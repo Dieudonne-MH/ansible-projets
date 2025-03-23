@@ -1,0 +1,4 @@
+
+ansible-galaxy install -r roles/requirements.yml
+
+ansible-playbook -i hosts.yml --ask-vault-pass wordpress.yml

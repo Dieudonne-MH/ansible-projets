@@ -1,0 +1,5 @@
+ansible-galaxy install geerlingguy.pip
+ansible-galaxy install geerlingguy.docker
+cat roles/requirements.yml
+ansible-galaxy install -r roles/requirements.yml
+ansible-playbook deploy-app.yml
